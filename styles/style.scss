@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    width: 100%;
+    height: 44px;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 10px 16px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__menu {
+        height: 2px;
+        width: 18px;
+        margin: 3px 0;
+        background: #000000;
+    }
+}
+
