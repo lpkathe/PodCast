@@ -2,6 +2,13 @@ body {
   margin: 0;
   padding: 0; }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0; }
+
 .navigation {
   width: 100%;
   height: 44px;
@@ -27,22 +34,47 @@ body {
     width: 18px;
     margin: 3px 0;
     background: #000000; }
-  .navigation__checkbox {
-    visibility: hidden; }
-    .navigation__checkbox-label {
-      cursor: pointer;
-      position: absolute;
-      right: 16px; }
-  .navigation__list {
-    list-style: none;
-    width: 0px;
-    height: 0px;
-    right: -50px;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    margin-top: 144px; }
-  .navigation__checkbox:checked ~ .navigation__list {
-    width: 320px;
-    right: 0; }
+  .navigation__label {
+    cursor: pointer; }
+
+.aside__checkbox {
+  visibility: hidden; }
+.aside__list {
+  list-style: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: -100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #0000EC;
+  margin: 0;
+  line-height: 28px;
+  height: 224px;
+  padding: 16px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+  .aside__list a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    color: #FFFFFF;
+    letter-spacing: 0; }
+  .aside__list a:hover {
+    color: #c4c2c2; }
+.aside__checkbox:checked ~ .aside__list {
+  left: 0; }
 
 /*# sourceMappingURL=style.css.map */
