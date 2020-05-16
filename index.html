@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/a591ef4528.js" crossorigin="anonymous"></script>
-    <title>PODCAST</title>
+    <title>PODCAST 2020</title>
 </head>
 <body>
     <main>
         <nav class="navigation">
             <picture class="navigation__logo">
-                <img src="images/logo.svg" alt="logotipe">
+                <img src="images/logo.svg" alt="logo">
             </picture>
-            <div>
+            <label class="navigation__checkbox-label" for="menu">
                 <div class="navigation__menu"></div>
                 <div class="navigation__menu"></div>
                 <div class="navigation__menu"></div>
-            </div>
+            </label>
+        <input type="checkbox" id="menu" class="navigation__checkbox">
+        <ul class="navigation__list">
+            <li> <a href="#">EPISODIOS</a></li>
+            <li> <a href="#">NOSOTROS</a></li>
+            <li> <a href="#">ENTREVISTAS</a></li>
+            <li> <a href="#">TÓPICOS</a></li>
+        </ul>
         </nav>
     </main>
-    
 </body>
+
 </html>

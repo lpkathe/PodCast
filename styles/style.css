@@ -27,5 +27,22 @@ body {
     width: 18px;
     margin: 3px 0;
     background: #000000; }
+  .navigation__checkbox {
+    visibility: hidden; }
+    .navigation__checkbox-label {
+      cursor: pointer;
+      position: absolute;
+      right: 16px; }
+  .navigation__list {
+    list-style: none;
+    width: 0px;
+    height: 0px;
+    right: -50px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-top: 144px; }
+  .navigation__checkbox:checked ~ .navigation__list {
+    width: 320px;
+    right: 0; }
 
 /*# sourceMappingURL=style.css.map */
