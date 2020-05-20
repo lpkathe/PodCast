@@ -15,6 +15,18 @@ $background-skew: 6deg;
     letter-spacing: 0;
 }
 
+.base_section_button {
+    background: #00F3BB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    height: 48px;
+    width: 288px;
+}
+
 body {
     @include margin-padding();
 }
@@ -142,15 +154,7 @@ body {
     }
 
     &__button {
-        background: #00F3BB;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 16px;
-        color: #060A24;
-        letter-spacing: 0;
-        text-align: center;
-        line-height: 24px;
-        height: 48px;
-        width: 288px;
+        @extend .base_section_button;
         margin-top: 36px;
         margin-bottom: 22px;
     
@@ -163,7 +167,7 @@ body {
 }
 
 .episodes {
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background-image: linear-gradient(225deg,#0000FF 0%, #0000A3 100%);
     transform: skewy(-$background-skew);
     margin-top: 17px;
     padding-top: 1px;
@@ -296,6 +300,32 @@ body {
     }
 }
 
+.news {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewy(-$background-skew);
+    margin-top: 17px;
+    padding-top: 1px;
+    padding-bottom: 120px;
+    padding-left: $paddin-left;
+
+    &__title {
+        @extend .base_section_title;
+        transform: skewy($background-skew);
+        color: #FFFFFF;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    &__button {
+        @extend .base_section_button;
+        transform: skewy($background-skew);
+
+        &:hover {
+            color: #FFFFFF;
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        } 
+    }
+}
 
 @media (min-width: 1024px) {
         
@@ -305,6 +335,17 @@ body {
         padding-left: $paddin-left;
         color: #060A24;
         letter-spacing: 0;
+    }
+
+    .base_section_button-desktop {
+        background: #00F3BB;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        height: 56px;
+        width: 345px;
     }
 
     .navigation {
@@ -506,6 +547,30 @@ body {
                     margin: 0px 16px 0 16px;
                 }
             }
+        }
+    }
+
+    .news {
+        height: 418px;
+        margin-top: 100px;
+        text-align: center;
+        padding-top: 140px;
+        width: 100vw;
+
+        &__title {
+            @extend .base_section_title-desktop;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        &__button {
+            @extend .base_section_button-desktop;
+            margin-top: 36px;
+
+            &:hover {
+                color: #FFFFFF;
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            } 
         }
     }
 }
