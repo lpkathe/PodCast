@@ -201,7 +201,7 @@ body {
     "text";
     transform: translateY(-77px);
     
-    &__image{
+    &__picture__image {
         height: 519px;
         grid-area: image;
     }
@@ -230,6 +230,30 @@ body {
         
         & p {
             margin: 8px 16px 0 16px;
+        }
+    }
+}
+
+.special_guest {
+    transform: translateY(-77px);
+
+    &__title {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin: 54px 16px 0 16px;
+    }
+
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 14px;
+
+        & img {
+            width: 320px;
+            height: 243px;
         }
     }
 }
@@ -362,6 +386,7 @@ body {
             }
         }
     }
+
     .phone {
         grid-template-columns: 45vw 55vw;
         grid-template-rows: auto;
@@ -391,4 +416,21 @@ body {
         }
     }    
 
+    .special_guest {
+        &__title {
+            margin: 64px auto 0 200px;
+            font-size: 48px;
+        }
+
+        &__container {
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 36px;
+
+            & img {
+                width: 480px;
+                height: 364px;
+            }
+        }
+    }
 }
