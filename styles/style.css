@@ -1,3 +1,11 @@
+.base_section_title, .introduction__title, .introduction__title-punto, .episodes__title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  padding-left: 16px;
+  color: #060A24;
+  letter-spacing: 0; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -88,33 +96,26 @@ body {
   left: 0; }
 
 .section {
-  padding: 16px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .section__introduction__title {
-    margin: 0;
-    padding: 0;
+
+.introduction {
+  padding-left: 16px; }
+  .introduction__title {
     width: 215px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 36px;
+    padding-left: 0;
     font-weight: lighter;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 42px;
-    margin-bottom: 16px; }
-    .section__introduction__title-tachado {
+    margin-bottom: 16px;
+    margin-top: 19px; }
+    .introduction__title-tachado {
       margin: 0;
       padding: 0;
       text-decoration: line-through; }
-    .section__introduction__title-punto {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 36px;
-      color: #060A24;
-      letter-spacing: 0;
-      line-height: 42px; }
-  .section__introduction__p {
+    .introduction__title-punto {
+      padding-left: 0; }
+  .introduction__p {
     margin: 0;
     padding: 0;
     height: 66px;
@@ -124,12 +125,12 @@ body {
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px; }
-    .section__introduction__p-desktop {
+    .introduction__p-desktop {
       display: none; }
-  .section__introduction__button {
+  .introduction__button {
     background: #00F3BB;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 18px;
+    font-size: 16px;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
@@ -137,12 +138,50 @@ body {
     height: 48px;
     width: 288px;
     margin-top: 36px;
-    margin-bottom: 24px; }
-    .section__introduction__button:hover {
+    margin-bottom: 22px; }
+    .introduction__button:hover {
       color: #FFFFFF;
       background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
 
+.episodes {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewy(-6deg);
+          transform: skewy(-6deg);
+  margin-top: 17px;
+  padding-top: 1px;
+  padding-bottom: 120px; }
+  .episodes__title {
+    color: #FFFFFF;
+    -webkit-transform: skewy(6deg);
+            transform: skewy(6deg);
+    margin: 0 10px 10px 0;
+    padding-top: 54px; }
+  .episodes__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .episodes__container__iframe {
+      width: 298px;
+      height: 225px;
+      -webkit-transform: skewy(6deg);
+              transform: skewy(6deg);
+      margin-bottom: 11px; }
+
 @media (min-width: 1024px) {
+  .base_section_title, .introduction__title, .introduction__title-punto, .episodes__title {
+    font-size: 48px;
+    line-height: 42px;
+    padding-left: 16px;
+    color: #060A24;
+    letter-spacing: 0; }
+
   .navigation {
     padding: 22px 100px;
     width: -webkit-fit-content;
@@ -203,31 +242,51 @@ body {
   .section {
     margin: 0;
     padding: 0; }
-    .section__introduction {
-      padding-top: 120px;
-      padding-left: 200px; }
-      .section__introduction__title {
-        width: auto;
+
+  .introduction {
+    padding-top: 120px;
+    padding-left: 200px; }
+    .introduction__title {
+      width: auto;
+      font-size: 64px;
+      margin: 0px;
+      padding-left: 0; }
+      .introduction__title-punto {
         font-size: 64px;
-        margin: 0px; }
-        .section__introduction__title-punto {
-          font-size: 64px;
-          color: #0000EC; }
-      .section__introduction__p {
-        display: none; }
-        .section__introduction__p-desktop {
-          display: block;
-          margin: 0;
-          padding: 0;
-          font-family: 'IBM Plex Mono', monospace;
-          width: 628px;
-          height: 48px;
-          font-size: 16px;
-          line-height: 24px;
-          margin-top: 15px; }
-      .section__introduction__button {
-        height: 56px;
-        width: 226px;
-        margin-top: 56px; } }
+        color: #0000EC;
+        padding-left: 0; }
+    .introduction__p {
+      display: none; }
+      .introduction__p-desktop {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-family: 'IBM Plex Mono', monospace;
+        width: 628px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 15px; }
+    .introduction__button {
+      height: 56px;
+      width: 226px;
+      margin-top: 56px; }
+
+  .episodes {
+    padding: 26px 0px 232.6px 0px; }
+    .episodes__title {
+      font-size: 48px;
+      margin: 0 0 26px 200px;
+      padding-left: 0;
+      color: #FFFFFF; }
+    .episodes__container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .episodes__container__iframe {
+        width: 584px;
+        height: 232px;
+        margin: 72px; } }
 
 /*# sourceMappingURL=style.css.map */
