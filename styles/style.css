@@ -236,6 +236,39 @@ body {
       width: 320px;
       height: 243px; }
 
+.topics {
+  -webkit-transform: translateY(-77px);
+          transform: translateY(-77px); }
+  .topics__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin: 48px 16px 0 16px; }
+  .topics__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+    .topics__container div {
+      margin-top: 52px; }
+      .topics__container div img {
+        margin: 13px 108px;
+        width: 104px;
+        height: 104px; }
+      .topics__container div p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 24px;
+        font-weight: bolder;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        margin: 0px 16px 0 16px; }
+
 @media (min-width: 1024px) {
   .base_section_title-desktop, .phone__text__container__title {
     font-size: 48px;
@@ -380,6 +413,33 @@ body {
     margin-top: 36px; }
     .special_guest__container img {
       width: 480px;
-      height: 364px; } }
+      height: 364px; }
+
+  .topics__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    margin: 63px auto 69px 200px; }
+  .topics__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: 56px 200px 0 200px; }
+    .topics__container div {
+      margin: 0 0 0 0;
+      width: 260px;
+      height: 130px; }
+      .topics__container div img {
+        margin: 13px 78px; }
+      .topics__container div p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 24px;
+        font-weight: bolder;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        margin: 0px 16px 0 16px; } }
 
 /*# sourceMappingURL=style.css.map */
