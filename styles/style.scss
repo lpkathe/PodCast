@@ -44,7 +44,7 @@ body {
     justify-content: space-between;
 }
 
-.navigation {
+.nav-bar {
     padding: 10px 16px;
     width: 100%;
     height: 44px;
@@ -70,7 +70,7 @@ body {
     }
 }
 
-.aside {
+.navigation {
     
     &__checkbox {
         display: none;
@@ -107,7 +107,7 @@ body {
         }
     }
 
-    &__checkbox:checked ~ .aside__list {
+    &__checkbox:checked ~ .navigation__list {
         left: 0;
     }
 }
@@ -348,7 +348,7 @@ body {
         width: 345px;
     }
 
-    .navigation {
+    .nav-bar {
         padding: 22px 100px;
         width: fit-content;
         height: 80px;
@@ -368,7 +368,7 @@ body {
         }
     }
 
-    .aside {
+    .navigation {
         display: flex;
         height: 80px;
         flex-grow: 1;

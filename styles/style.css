@@ -44,7 +44,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.navigation {
+.nav-bar {
   padding: 10px 16px;
   width: 100%;
   height: 44px;
@@ -57,20 +57,20 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FFFFFF; }
-  .navigation__logo {
+  .nav-bar__logo {
     width: 24px;
     height: 24px; }
-  .navigation__menu {
+  .nav-bar__menu {
     margin: 3px 0;
     width: 18px;
     height: 2px;
     background: #000000; }
-  .navigation__label {
+  .nav-bar__label {
     cursor: pointer; }
 
-.aside__checkbox {
+.navigation__checkbox {
   display: none; }
-.aside__list {
+.navigation__list {
   margin: 0;
   padding: 16px;
   width: 100%;
@@ -94,16 +94,16 @@ body {
   line-height: 28px;
   -webkit-transition: left .5s ease-in-out;
   transition: left .5s ease-in-out; }
-  .aside__list a {
+  .navigation__list a {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: lighter;
     text-decoration: none;
     color: #FFFFFF;
     letter-spacing: 0; }
-  .aside__list a:hover {
+  .navigation__list a:hover {
     color: #c4c2c2; }
-.aside__checkbox:checked ~ .aside__list {
+.navigation__checkbox:checked ~ .navigation__list {
   left: 0; }
 
 .section {
@@ -310,22 +310,22 @@ body {
     height: 56px;
     width: 345px; }
 
-  .navigation {
+  .nav-bar {
     padding: 22px 100px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 80px; }
-    .navigation__logo {
+    .nav-bar__logo {
       width: 36px;
       height: 36px; }
-      .navigation__logo img {
+      .nav-bar__logo img {
         width: 36px;
         height: 36px; }
-    .navigation__label {
+    .nav-bar__label {
       display: none; }
 
-  .aside {
+  .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,7 +339,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    .aside__list {
+    .navigation__list {
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content;
@@ -357,13 +357,13 @@ body {
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding: 0; }
-      .aside__list a {
+      .navigation__list a {
         color: #060A24; }
-      .aside__list a:hover {
+      .navigation__list a:hover {
         font-family: "IBM Plex Mono Medium";
         text-decoration: line-through;
         color: #00F3BB; }
-      .aside__list a:active {
+      .navigation__list a:active {
         text-decoration: line-through;
         color: rgba(6, 10, 36, 0.56); }
 

@@ -8,40 +8,39 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a591ef4528.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/normalize.css.css">
     <title>PODCAST 2020</title>
 </head>
 
 <body>
     <main class="main">
         <div class="bar_container">
-            <nav class="navigation">
-                <picture class="navigation__logo">
+            <section class="nav-bar">
+                <picture class="nav-bar__logo">
                     <img src="images/logo.svg" alt="logo">
                 </picture>
-                <label class="navigation__label" for="menu">
-                    <div class="navigation__menu"></div>
-                    <div class="navigation__menu"></div>
-                    <div class="navigation__menu"></div>
+                <label class="nav-bar__label" for="menu">
+                    <div class="nav-bar__menu"></div>
+                    <div class="nav-bar__menu"></div>
+                    <div class="nav-bar__menu"></div>
                 </label>
-            </nav>
-            <aside class="aside">
-                <input type="checkbox" id="menu" class="aside__checkbox">
-                <ul class="aside__list">
+            </section>
+            <nav class="navigation">
+                <input type="checkbox" id="menu" class="navigation__checkbox">
+                <ul class="navigation__list">
                     <li> <a href="#episodes">EPISODIOS</a></li>
                     <li> <a href="#phone">NOSOTROS</a></li>
                     <li> <a href="#special_guest">ENTREVISTAS</a></li>
                     <li> <a href="#topics">TÓPICOS</a></li>
                 </ul>
-            </aside>
+            </nav>
         </div>
         <section class="section">
             <article class="introduction">
-                <h1 class="introduction__title">Hello <span class="introduction__title-tachado">world</span> pale blue
-                    dot<span class="introduction__title-punto">.</span></h1>
+                <header class="introduction__title">Hello <span class="introduction__title-tachado">world</span> pale blue
+                    dot<span class="introduction__title-punto">.</span></header>
                 <p class="introduction__p">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
                     los jueves cada 15 días.</p>
                 <p class="introduction__p-desktop">El portal de podcasts que explora el mundo de la programación y la
@@ -51,14 +50,10 @@
             <article class="episodes" id="episodes">
                 <h1 class="episodes__title">Episodios</h1>
                 <div class="episodes__container">
-                    <iframe class="episodes__container__iframe" src="landingUI_desktop_mobile_kit/assets/embed1_.png"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe class="episodes__container__iframe" src="landingUI_desktop_mobile_kit/assets/embed2_.png"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe class="episodes__container__iframe" src="landingUI_desktop_mobile_kit/assets/embed1_.png"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe class="episodes__container__iframe" src="landingUI_desktop_mobile_kit/assets/embed3_.png"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="episodes__container__iframe" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="episodes__container__iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="episodes__container__iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="episodes__container__iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </article>
             <article class="phone" id="phone">
@@ -112,6 +107,9 @@
                 <button class="news__button">ESCUCHÁ LOS EPISODIOS</button>
             </article>
         </section>
+        <footer>
+            <p>© 2019— Hello blue pale dot</p>
+        </footer>
     </main>
 </body>
 
