@@ -15,6 +15,14 @@ $background-skew: 6deg;
     letter-spacing: 0;
 }
 
+.base_section_p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
 .base_section_button {
     background: #00F3BB;
     font-family: 'IBM Plex Mono', monospace;
@@ -140,13 +148,9 @@ body {
 
     &__p {
         @include margin-padding();
+        @extend .base_section_p;
         height: 66px;
         width: 288px;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 14px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 22px;
 
         &-desktop {
             display: none;
@@ -211,15 +215,10 @@ body {
     }
 
     &__text__container {
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 14px;
         font-weight: lighter;
-        color: #060A24;
-        letter-spacing: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        line-height: 22px;
         grid-area: text;
         
         &__title {
@@ -233,6 +232,7 @@ body {
         }
         
         & p {
+            @extend .base_section_p;
             margin: 8px 16px 0 16px;
         }
     }
@@ -307,6 +307,7 @@ body {
     padding-top: 1px;
     padding-bottom: 120px;
     padding-left: $paddin-left;
+    z-index: 0;
 
     &__title {
         @extend .base_section_title;
@@ -319,11 +320,40 @@ body {
     &__button {
         @extend .base_section_button;
         transform: skewy($background-skew);
+        
+        &__a {
+            text-decoration: none;
+        }
 
         &:hover {
             color: #FFFFFF;
             background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         } 
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:#FFFFFF;
+    transform: translateY(-50px);
+    z-index: 1;
+    
+    &__p {
+        @extend .base_section_p;
+        margin-bottom: 0;
+    }
+    
+    &__social-network{
+        margin: 16px 0px 31px 0px;
+        display: flex;
+        padding: 0 45px;
+        justify-content: space-between;
+
+        & i {
+            @include margin-padding()
+        }
     }
 }
 
@@ -335,6 +365,11 @@ body {
         padding-left: $paddin-left;
         color: #060A24;
         letter-spacing: 0;
+    }
+
+    .base_section_p-desktop {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .base_section_button-desktop {
@@ -431,11 +466,10 @@ body {
             &-desktop {
                 display: block;
                 @include margin-padding();
+                @extend .base_section_p-desktop;
                 font-family: 'IBM Plex Mono', monospace;
                 width: 628px;
                 height: 48px;
-                font-size: 16px;
-                line-height: 24px;
                 margin-top: 15px;
             }
         }
@@ -490,7 +524,7 @@ body {
             }
 
             &__p {
-                font-size: 16px;
+                @extend .base_section_p-desktop;
                 width: 464px;
             }
         }
@@ -551,26 +585,43 @@ body {
     }
 
     .news {
-        height: 418px;
         margin-top: 100px;
         text-align: center;
         padding-top: 140px;
         width: 100vw;
+        height: 318px;
 
         &__title {
             @extend .base_section_title-desktop;
             color: #FFFFFF;
-            margin: 0;
+            margin: 213 0 0 0;
         }
 
         &__button {
             @extend .base_section_button-desktop;
-            margin-top: 36px;
+            margin: 36px 0 151 0;
 
             &:hover {
                 color: #FFFFFF;
                 background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
             } 
         }
+    }
+
+    .footer {
+        transform: translateY(-75px);
+        display: inline-block;
+
+        
+        &__p {
+            width: 50%;
+
+        }
+
+        &__social-network {
+            width: 50%;
+            display: inline;
+        }
+
     }
 }
