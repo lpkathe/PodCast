@@ -15,8 +15,6 @@
   line-height: 22px; }
 
 .button {
-  margin: 0;
-  padding: 0;
   background: #00F3BB;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
@@ -26,14 +24,15 @@
   line-height: 22px;
   height: 48px;
   width: 288px;
-  border: 0; }
-  .button__a {
-    text-decoration: none;
-    color: #060A24; }
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .button:hover {
     color: #FFFFFF;
-    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    pointer-events: visibleStroke; }
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
 
 body {
   margin: 0;
@@ -151,7 +150,7 @@ body {
     width: 288px; }
     .introduction__p-desktop {
       display: none; }
-  .introduction button {
+  .introduction a {
     margin: 36px 0 15px 0; }
 
 .episodes {
