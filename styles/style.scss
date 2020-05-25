@@ -110,16 +110,12 @@ body {
     }
 }
 
-.section {
-    flex-direction: column;
-}
-
 .introduction {
     padding-left: $paddin-left;
         
     &__title {
         @extend .base_section_title;
-        width: 221px;
+        width: 225px;
         padding-left: 0;
         font-weight: lighter;
         margin-bottom: 16px;

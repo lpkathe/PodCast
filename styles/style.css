@@ -112,16 +112,10 @@ body {
   .navigation__list a:hover {
     color: #c4c2c2; }
 
-.section {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
 .introduction {
   padding-left: 16px; }
   .introduction__title {
-    width: 221px;
+    width: 225px;
     padding-left: 0;
     font-weight: lighter;
     margin-bottom: 16px;
