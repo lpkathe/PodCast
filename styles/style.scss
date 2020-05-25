@@ -332,6 +332,30 @@ body {
     }
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:#FFFFFF;
+    transform: translateY(-50px);
+    z-index: 1;
+    
+    &__p {
+        @extend .base_section_p;
+        margin-bottom: 0;
+    }
+    
+    &__social-network{
+        margin: 16px 45px 31px 45px;
+        display: flex;
+        padding: 0;
+
+        & i {
+            margin: 0 auto;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
         
     .base_section_title-desktop {
