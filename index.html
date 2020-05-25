@@ -40,30 +40,29 @@
         <section class="section">
             <article class="introduction">
                 <header class="introduction__title">Hello <span class="introduction__title-tachado">world</span> pale
-                    blue
-                    dot<span class="introduction__title-punto">.</span></header>
+                    blue dot<span class="introduction__title-punto">.</span></header>
                 <p class="introduction__p">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
                     los jueves cada 15 días.</p>
                 <p class="introduction__p-desktop">El portal de podcasts que explora el mundo de la programación y la
                     tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-                <button class="introduction__button">CONOCÉ MÁS</button>
+                <button class="button"><a class="button__a" href="wwww.aboutblank.com">CONOCÉ MÁS</a></button>
             </article>
             <article class="episodes" id="episodes">
+                <div class="episodes__background"></div>
                 <h1 class="episodes__title">Episodios</h1>
-                <div class="episodes__container">
-                    <iframe class="episodes__container__iframe"
-                        src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%"
-                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe class="episodes__container__iframe"
-                        src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%"
-                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe class="episodes__container__iframe"
-                        src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%"
-                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <iframe class="episodes__container__iframe"
-                        src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%"
-                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
+                <iframe class="episodes__iframe"
+                    src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe class="episodes__iframe"
+                    src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe class="episodes__iframe"
+                    src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe class="episodes__iframe"
+                    src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="episodes__background-bottom"></div>
             </article>
             <article class="phone" id="phone">
                 <picture class="phone__picture">
@@ -97,36 +96,46 @@
                 <h1 class="topics__title">Algunos de nuestros temas</h1>
                 <div class="topics__container">
                     <div>
-                        <img src="landingUI_desktop_mobile_kit/assets/icon1.svg" alt="">
+                        <picture class="topics__container__picture-1">
+                            <img src="landingUI_desktop_mobile_kit/assets/icon1.svg" alt="">
+                        </picture>
                         <p>Trabajo remoto</p>
                     </div>
                     <div>
-                        <img src="landingUI_desktop_mobile_kit/assets/icon2.svg" alt="">
+                        <picture class="topics__container__picture-2">
+                            <img src="landingUI_desktop_mobile_kit/assets/icon2.svg" alt="">
+                        </picture>
                         <p>Repensando la programación</p>
                     </div>
                     <div>
-                        <img src="landingUI_desktop_mobile_kit/assets/icon3.svg" alt="">
+                        <picture class="topics__container__picture">
+                            <img src="landingUI_desktop_mobile_kit/assets/icon3.svg" alt="">
+                        </picture>
                         <p>Bases del código</p>
                     </div>
                     <div>
-                        <img src="landingUI_desktop_mobile_kit/assets/icon4.svg" alt="">
+                        <picture class="topics__container__picture">
+                            <img src="landingUI_desktop_mobile_kit/assets/icon4.svg" alt="">
+                        </picture>
                         <p>Seguridad informática</p>
                     </div>
                 </div>
             </article>
             <article class="news">
+                <div class="episodes__background"></div>
                 <h1 class="news__title">¿Querés las últimas novedades?</h1>
-                <button class="news__button"><a href="#episodes" class="news__button__a">ESCUCHÁ LOS EPISODIOS</a></button>
+                <button class="button"><a href="#episodes" class="button__a">ESCUCHÁ LOS
+                        EPISODIOS</a></button>
             </article>
         </section>
         <footer class="footer">
             <p class="footer__p">© 2019— Hello blue pale dot</p>
             <div class="footer__social-network">
-                <i class="fab fa-spotify"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-telegram"></i>
+                <a href="https://www.spotify.com"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org"><i class="fab fa-telegram"></i></a>
             </div>
         </footer>
     </main>
