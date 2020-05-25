@@ -348,6 +348,10 @@ body {
         display: flex;
         padding: 0 45px;
         justify-content: space-between;
+
+        & a {
+            color: #060A24;
+        }
     }
 }
 

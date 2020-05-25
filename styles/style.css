@@ -310,6 +310,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .footer__social-network a {
+      color: #060A24; }
 
 @media (min-width: 1024px) {
   .base_section_title-desktop, .phone__text__container__title, .news__title {
