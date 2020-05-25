@@ -1,25 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/normalize.css.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/a591ef4528.js" crossorigin="anonymous"></script>
-    <title>PODCAST</title>
+    <link rel="stylesheet" href="styles/style-hamburguer.css">
+    <title>PODCAST 2020</title>
 </head>
+
 <body>
-    <main>
-        <nav class="navigation">
-            <picture class="navigation__logo">
-                <img src="images/logo.svg" alt="logotipe">
-            </picture>
-            <div>
-                <div class="navigation__menu"></div>
-                <div class="navigation__menu"></div>
-                <div class="navigation__menu"></div>
+    <main class="main">
+        <div class="bar_container">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <div class="nav-bar">
+                <picture class="nav-bar__logo">
+                    <img src="images/logo.svg" alt="logo">
+                </picture>
+                <label class="menu" for="checkbox">
+                    <span></span>
+                </label>
             </div>
-        </nav>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li> <a href="#episodes">EPISODIOS</a></li>
+                    <li> <a href="#phone">NOSOTROS</a></li>
+                    <li> <a href="#special_guest">ENTREVISTAS</a></li>
+                    <li> <a href="#topics">TÓPICOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="introduction">
+            <h2 class="introduction__title">Hello <span class="introduction__title-tachado">world</span> pale
+                blue dot<span class="introduction__title-punto">.</span></h2>
+            <p class="introduction__p">Un podcast que explora el mundo de la programación. Nuevos episodios, todos
+                los jueves cada 15 días.</p>
+            <p class="introduction__p-desktop">El portal de podcasts que explora el mundo de la programación y la
+                tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <a class="button" href="wwww.aboutblank.com">CONOCÉ MÁS</a>
+        </section>
+        <section class="episodes" id="episodes">
+            <div class="episodes__background"></div>
+            <h2 class="episodes__title">Episodios</h2>
+            <iframe class="episodes__iframe" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+                allow="encrypted-media"></iframe>
+            <iframe class="episodes__iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                allow="encrypted-media"></iframe>
+            <iframe class="episodes__iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                allow="encrypted-media"></iframe>
+            <iframe class="episodes__iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                allow="encrypted-media"></iframe>
+            <div class="episodes__background-bottom"></div>
+        </section>
+        <section class="phone" id="phone">
+            <picture class="phone__picture">
+                <img class="phone__picture__image" src="images/phone.png" alt="the secret history of women in coding">
+            </picture>
+            <div class="phone__text__container">
+                <h2 class="phone__text__container__title">De dónde venimos</h2>
+                <p class="phone__text__container__p">Our posturings, our imagined self-importance, the delusion that
+                    we have some privileged position in the Universe, are challenged by this point of pale light.
+                </p>
+                <p class="phone__text__container__p">Our planet is a lonely speck in the great enveloping cosmic
+                    dark. In our obscurity, in all this vastness, there is no hint that help will come from
+                    elsewhere to save us from ourselves.</p>
+            </div>
+        </section>
+        <section class="special_guest" id="special_guest">
+            <h2 class="special_guest__title">Invitadas/os estelares</h2>
+            <div class="special_guest__container">
+                <img src="images/grace-hopper.png" alt="Grace Hopper">
+                <img src="images/Katie-Bouman.png" alt="Katie Bouman">
+                <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img src="images/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
+                    alt="An E.R.A.Univac 1103 computer in the 1950s">
+                <img src="images/Computer_operators_with_an_Eniac.png" alt="Computer operators with an Eniac">
+                <img src="images/susan-kare.png" alt="Susan Kare">
+            </div>
+        </section>
+        <section class="topics" id="topics">
+            <h2 class="topics__title">Algunos de nuestros temas</h2>
+            <div class="topics__container">
+                <div>
+                    <picture class="topics__container__picture-1">
+                        <img src="landingUI_desktop_mobile_kit/assets/icon1.svg" alt="">
+                    </picture>
+                    <p>Trabajo remoto</p>
+                </div>
+                <div>
+                    <picture class="topics__container__picture-2">
+                        <img src="landingUI_desktop_mobile_kit/assets/icon2.svg" alt="">
+                    </picture>
+                    <p>Repensando la programación</p>
+                </div>
+                <div>
+                    <picture class="topics__container__picture">
+                        <img src="landingUI_desktop_mobile_kit/assets/icon3.svg" alt="">
+                    </picture>
+                    <p>Bases del código</p>
+                </div>
+                <div>
+                    <picture class="topics__container__picture">
+                        <img src="landingUI_desktop_mobile_kit/assets/icon4.svg" alt="">
+                    </picture>
+                    <p>Seguridad informática</p>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="episodes__background"></div>
+            <h2 class="news__title">¿Querés las últimas novedades?</h2>
+            <a href="#episodes" class="button">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
+        <footer class="footer">
+            <p class="footer__p">© 2019— Hello blue pale dot</p>
+            <div class="footer__social-network">
+                <a href="https://www.spotify.com"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org"><i class="fab fa-telegram"></i></a>
+            </div>
+        </footer>
     </main>
-    
 </body>
+
 </html>
