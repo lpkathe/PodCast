@@ -75,25 +75,9 @@ body {
         width: 24px;
         height: 24px;
     }
-
-    &__menu {
-        margin: 3px 0;
-        width: 18px;
-        height: 2px;
-        background: #000000;
-    }
-
-    &__label {
-        cursor: pointer;
-    }
 }
 
 .navigation {
-    
-    &__checkbox {
-        display: none;
-    }
-
     &__list {
         margin: 0;
         padding: 16px;
@@ -123,10 +107,6 @@ body {
         & a:hover {
             color: rgb(196, 194, 194);
         }
-    }
-
-    &__checkbox:checked ~ .navigation__list {
-        left: 0;
     }
 }
 
@@ -210,6 +190,7 @@ body {
         height: 232px;
         width: 301px;
         margin-bottom: 9px;
+        border: 0;
     }
 
 }
