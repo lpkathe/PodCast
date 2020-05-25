@@ -19,15 +19,17 @@
         line-height: 24px;
     }
 
-    .base_section_button-desktop {
-        background: #00F3BB;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 16px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 22px;
+    .button {
+        font-size: 18px;
+        line-height: 24px;
         height: 56px;
-        width: 345px;
+        width: 226px;
+        padding: 16px 0;
+    
+            &:hover {
+                color: #FFFFFF;
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            }
     }
 
     .irregular__background {
@@ -119,17 +121,17 @@
             font-size: 64px;
             margin: 0px;
             padding-left: 0;
-
+            
             &-punto {
                 font-size: 64px;
                 color: #0000EC;
                 padding-left: 0;
             }
         }
-
+        
         &__p {
             display: none;
-        
+            
             &-desktop {
                 display: block;
                 @include margin-padding();
@@ -138,17 +140,13 @@
                 width: 628px;
                 height: 48px;
                 margin-top: 15px;
+                margin-bottom: 56px;
             }
-        }
-        &__button {
-            height: 56px;
-            width: 226px;
-            margin-top: 56px;
         }
     }
 
     .episodes {
-        padding: 26px 0px 232.6px 0px;
+        padding: 0 0px 232.6px 0px;
 
         &__title {
             font-size: 48px;
@@ -262,16 +260,6 @@
             @extend .base_section_title-desktop;
             color: #FFFFFF;
             margin: 213 0 0 0;
-        }
-
-        &__button {
-            @extend .base_section_button-desktop;
-            margin: 36px 0 151 0;
-
-            &:hover {
-                color: #FFFFFF;
-                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-            } 
         }
     }
 
