@@ -284,15 +284,31 @@
     }
 
     .footer {
-        display: inline-block;
+        margin: 0 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 95px;
+        grid-template-areas: 'p div';
         
         &__p {
-            width: 50%;
-
+            margin: 0;
+            height: fit-content;
+            grid-area: p;
+            text-align: start;
+            align-self: center;
         }
 
         &__social-network {
-            display: inline;
+            @include margin-padding();
+            display: flex;
+            grid-area: div;
+            align-self: center;
+            justify-content: flex-end;
+            
+            & a {
+                width: 18px;
+                padding-left: 36px;
+            }
         }
 
     }
