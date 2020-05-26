@@ -183,7 +183,7 @@
         -ms-flex-pack: center;
             justify-content: center; }
     .topics__container div {
-      margin: 0 0 0 0;
+      margin: 0 0 34px 0;
       width: 260px; }
       .topics__container div picture {
         margin: 0 0 16px 0;
@@ -201,18 +201,19 @@
         margin: 0px 16px 0 16px; }
 
   .news {
-    margin-top: 100px;
-    text-align: center;
-    padding-top: 140px;
+    margin-top: 0px;
+    padding-bottom: 151px;
     width: 100vw;
-    height: 318px; }
+    height: 518px;
+    text-align: center; }
     .news__title {
-      color: #FFFFFF;
-      margin: 213 0 0 0; }
+      margin: 69px 0 36px 0;
+      padding: 0;
+      color: #FFFFFF; }
+    .news a {
+      width: 345px; }
 
   .footer {
-    -webkit-transform: translateY(-75px);
-            transform: translateY(-75px);
     display: inline-block; }
     .footer__p {
       width: 50%; }
