@@ -115,16 +115,16 @@ body {
   position: absolute;
   list-style: none;
   background: #0000EC;
-  line-height: 28px;
   -webkit-transition: left .5s ease-in-out;
   transition: left .5s ease-in-out; }
   .navigation__list a {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: lighter;
+    line-height: 28px;
+    letter-spacing: 0;
     text-decoration: none;
-    color: #FFFFFF;
-    letter-spacing: 0; }
+    color: #FFFFFF; }
   .navigation__list a:hover {
     color: #c4c2c2; }
 

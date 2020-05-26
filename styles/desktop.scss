@@ -73,24 +73,28 @@
     }
 
     .navigation {
-        display: flex;
+        margin: 26px 100px;
         height: 80px;
+        display: flex;
         flex-grow: 1;
-        padding: 26px 100px;
         box-sizing: border-box;  
         justify-content: flex-end;
         
         &__list {
+            padding: 0;
             height: fit-content;
-            position: relative;
-            background-color:#FFFFFF;
             top: 0px;
             left: 0px;
             flex-direction: row;
-            flex-basis: 70%;
+            flex-basis: 55%;
             justify-content: space-between;
-            padding: 0;
-            
+            position: relative;
+            background-color:#FFFFFF;
+
+            & li {
+                padding-left: 48px;
+            }
+
             & a {
                 color: #060A24;
             }

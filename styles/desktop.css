@@ -53,37 +53,39 @@
     display: none; }
 
   .navigation {
+    margin: 26px 100px;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 80px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    padding: 26px 100px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
     .navigation__list {
+      padding: 0;
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content;
-      position: relative;
-      background-color: #FFFFFF;
       top: 0px;
       left: 0px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%;
+      -ms-flex-preferred-size: 55%;
+          flex-basis: 55%;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: 0; }
+      position: relative;
+      background-color: #FFFFFF; }
+      .navigation__list li {
+        padding-left: 48px; }
       .navigation__list a {
         color: #060A24; }
       .navigation__list a:hover {

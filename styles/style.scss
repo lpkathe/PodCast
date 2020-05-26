@@ -112,16 +112,16 @@ body {
         position: absolute;
         list-style: none;
         background: #0000EC;
-        line-height: 28px;
         transition: left .5s ease-in-out;
-
+        
         & a {
             font-family: 'IBM Plex Mono', monospace;
             font-size: 16px;
             font-weight: lighter;
+            line-height: 28px;
+            letter-spacing: 0;
             text-decoration: none;
             color: #FFFFFF;
-            letter-spacing: 0;
         }
 
         & a:hover {
