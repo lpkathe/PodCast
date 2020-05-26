@@ -88,19 +88,16 @@
       margin-top: 10px;
       width: 470px; }
 
-  .episodes {
-    padding: 0; }
-    .episodes__title {
-      margin: 32px 0 26px 0;
-      color: #FFFFFF; }
-    .episodes__container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 72px;
-      margin-bottom: 80px; }
-      .episodes__container__iframe {
-        margin: 0; }
+  .episodes__title {
+    padding-left: 80px; }
+  .episodes__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 72px;
+    margin-bottom: 80px; }
+    .episodes__container__iframe {
+      margin: 0; }
 
   .phone {
     grid-template-columns: 45vw 55vw;
