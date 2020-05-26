@@ -211,8 +211,8 @@
 
     .special_guest {
         &__title {
-            margin: 64px auto 0 200px;
-            font-size: 48px;
+            @extend .base_section_title-desktop;
+            margin: 64px 0 36px 0;
         }
 
         &__container {
@@ -230,24 +230,25 @@
     .topics {
         
         &__title{
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 48px;
-            color: #060A24;
-            letter-spacing: 0;
-            margin: 63px auto 69px 200px;
+            @extend .base_section_title-desktop;
+            margin: 64px auto 56px 0px;
         }
 
         &__container{
             flex-flow: row nowrap;
-            margin: 56px 200px 0 200px;
+            justify-content: center;
             
             & div {
                 margin: 0 0 0 0;
                 width: 260px;
-                height: 130px;
 
-                & img {
-                    margin: 13px 78px;
+                & picture {
+                    margin: 0 0 16px 0;
+                    box-sizing: border-box;
+                
+                    & img {
+                        margin: 13px 78px;
+                    }
                 }
 
                 & p {
