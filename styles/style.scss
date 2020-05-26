@@ -184,13 +184,18 @@ body {
         align-self: start;
     }
     
-    &__iframe {
-        height: 232px;
-        width: 301px;
-        margin-bottom: 9px;
-        border: 0;
-    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+        &__iframe {
+            height: 232px;
+            width: 301px;
+            margin-bottom: 9px;
+            border: 0;
+        }   
+    }
 }
 
 .phone {
@@ -202,28 +207,28 @@ body {
     "text";
     position: relative;
     
-    &__picture__image {
+    &__picture {
+        &__image {
         height: 519px;
         grid-area: image;
         margin-top: -210px;
         z-index: 1;
+        }
     }
 
     &__text__container {
         font-weight: lighter;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         grid-area: text;
         
         &__title {
             @extend .base_section_title;
             margin: 27px 0 0 0;
             width: 288px;
-            margin-bottom: 0;
         }
         
-        & p {
+        &__p {
             @extend .base_section_p;
             margin: 8px 16px 0 16px;
         }

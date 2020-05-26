@@ -7,7 +7,7 @@
   color: #060A24;
   letter-spacing: 0; }
 
-.base_section_p, .introduction__p, .phone__text__container p, .footer__p {
+.base_section_p, .introduction__p, .phone__text__container__p, .footer__p {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
   color: #060A24;
@@ -171,11 +171,22 @@ body {
     margin-bottom: 21px;
     -ms-flex-item-align: start;
         align-self: start; }
-  .episodes__iframe {
-    height: 232px;
-    width: 301px;
-    margin-bottom: 9px;
-    border: 0; }
+  .episodes__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .episodes__container__iframe {
+      height: 232px;
+      width: 301px;
+      margin-bottom: 9px;
+      border: 0; }
 
 .phone {
   display: grid;
@@ -197,15 +208,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     grid-area: text; }
     .phone__text__container__title {
       margin: 27px 0 0 0;
-      width: 288px;
-      margin-bottom: 0; }
-    .phone__text__container p {
+      width: 288px; }
+    .phone__text__container__p {
       margin: 8px 16px 0 16px; }
 
 .special_guest__title {

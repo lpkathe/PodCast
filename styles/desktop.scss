@@ -1,5 +1,5 @@
 @media (min-width: 1440px) {
-    $paddin-left: 16px;
+    $paddin-left: 200px;
             
     @mixin margin-padding {
         margin: 0;
@@ -7,11 +7,12 @@
     }
 
     .base_section_title-desktop {
+        padding-left: $paddin-left;
+        font-family: 'IBM Plex Sans', sans-serif;
         font-size: 48px;
         line-height: 42px;
-        padding-left: $paddin-left;
-        color: #060A24;
         letter-spacing: 0;
+        color: #060A24;
     }
 
     .base_section_p-desktop {
@@ -35,18 +36,16 @@
     .irregular__background {
 
         &__top {
-            width: 0;
-            height: 0;
-            transform: translateY(-1px);
-            border-top: 20vw solid white;
-            border-right: 100vh solid transparent;
+            transform: translateY(-2px);
+            border-top: 10vw solid white;
+            border-right: 162vh solid transparent;
         }
     
         &__bottom {
             width: 0;
             height: 0;
-            border-top: 78vw solid transparent;
-            border-right: 315vh solid white;
+            border-top: 10vw solid transparent;
+            border-right: 100vw solid white;
             transform: translateY(1px);
             z-index: 0;
         }
@@ -122,6 +121,7 @@
         padding-left: 200px;
 
         &__title {
+            @extend .base_section_title-desktop;
             margin: 0px;
             padding-left: 0;
             width: auto;
@@ -150,22 +150,25 @@
     }
 
     .episodes {
-        padding: 0 0px 232.6px 0px;
+        padding: 0;
 
         &__title {
-            font-size: 48px;
-            margin: 0 0 26px 200px;
-            padding-left: 0;
+            @extend .base_section_title-desktop;
+            margin: 32px 0 26px 0;
             color: #FFFFFF;
         }
 
         &__container {
-            flex-flow: row wrap;
-            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 72px;
+            margin-bottom: 80px;
+
             &__iframe {
-                width:584px;
-                height:232px;
-                margin: 72px;
+                margin: 0;
+                width: 584px;
+                height: 232px;
             }
         }
     }
@@ -178,25 +181,32 @@
 
         &__picture {
             text-align: right;
+            margin-top: 64px;
             
             &__image {
-            width: 457.6px;
-            height: 660px;
+                height: 660px;
+                margin-top: -230px;
             }
         }
 
         &__text__container {
-        
+            margin: 40px 0 0 70px;
+
             &__title {
                 @extend .base_section_title-desktop;
                 padding-left: 0px;
+                width: 400px;
+                margin-top: 0;
+                margin-bottom: 24px;
             }
 
             &__p {
                 @extend .base_section_p-desktop;
+                margin-left: 0px;
                 width: 464px;
             }
         }
+        
     }    
 
     .special_guest {
