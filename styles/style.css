@@ -131,11 +131,11 @@ body {
 .introduction {
   padding-left: 16px; }
   .introduction__title {
-    width: 225px;
-    padding-left: 0;
-    font-weight: lighter;
+    margin-top: 29px;
     margin-bottom: 16px;
-    margin-top: 29px; }
+    padding-left: 0;
+    width: 225px;
+    font-weight: lighter; }
     .introduction__title-tachado {
       margin: 0;
       padding: 0;
@@ -145,8 +145,8 @@ body {
   .introduction__p {
     margin: 0;
     padding: 0;
-    height: 66px;
-    width: 288px; }
+    width: 288px;
+    height: 66px; }
     .introduction__p-desktop {
       display: none; }
   .introduction a {

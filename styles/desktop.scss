@@ -117,24 +117,20 @@
         }
     }
 
-    .section {
-        @include margin-padding();
-    }
-    
     .introduction{
         padding-top: 120px;
         padding-left: 200px;
 
         &__title {
-            width: auto;
-            font-size: 64px;
             margin: 0px;
             padding-left: 0;
+            width: auto;
+            font-size: 64px;
             
             &-punto {
+                padding-left: 0;
                 font-size: 64px;
                 color: #0000EC;
-                padding-left: 0;
             }
         }
         
@@ -142,14 +138,13 @@
             display: none;
             
             &-desktop {
-                display: block;
-                @include margin-padding();
                 @extend .base_section_p-desktop;
-                font-family: 'IBM Plex Mono', monospace;
+                margin-top: 15px;
+                margin-bottom: 20px;
                 width: 628px;
                 height: 48px;
-                margin-top: 15px;
-                margin-bottom: 56px;
+                display: block;
+                font-family: 'IBM Plex Mono', monospace;
             }
         }
     }

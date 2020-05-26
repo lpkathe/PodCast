@@ -99,33 +99,27 @@
         text-decoration: line-through;
         color: rgba(6, 10, 36, 0.56); }
 
-  .section {
-    margin: 0;
-    padding: 0; }
-
   .introduction {
     padding-top: 120px;
     padding-left: 200px; }
     .introduction__title {
-      width: auto;
-      font-size: 64px;
       margin: 0px;
-      padding-left: 0; }
+      padding-left: 0;
+      width: auto;
+      font-size: 64px; }
       .introduction__title-punto {
+        padding-left: 0;
         font-size: 64px;
-        color: #0000EC;
-        padding-left: 0; }
+        color: #0000EC; }
     .introduction__p {
       display: none; }
       .introduction__p-desktop {
-        display: block;
-        margin: 0;
-        padding: 0;
-        font-family: 'IBM Plex Mono', monospace;
+        margin-top: 15px;
+        margin-bottom: 20px;
         width: 628px;
         height: 48px;
-        margin-top: 15px;
-        margin-bottom: 56px; }
+        display: block;
+        font-family: 'IBM Plex Mono', monospace; }
 
   .episodes {
     padding: 0 0px 232.6px 0px; }

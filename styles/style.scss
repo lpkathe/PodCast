@@ -135,11 +135,11 @@ body {
         
     &__title {
         @extend .base_section_title;
-        width: 225px;
-        padding-left: 0;
-        font-weight: lighter;
-        margin-bottom: 16px;
         margin-top: 29px;
+        margin-bottom: 16px;
+        padding-left: 0;
+        width: 225px;
+        font-weight: lighter;
 
         &-tachado {
             @include margin-padding();
@@ -155,8 +155,8 @@ body {
     &__p {
         @include margin-padding();
         @extend .base_section_p;
-        height: 66px;
         width: 288px;
+        height: 66px;
 
         &-desktop {
             display: none;
