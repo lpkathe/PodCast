@@ -52,6 +52,10 @@
         }
     }
 
+    .bar_container {
+        height: 80px;
+    } 
+
     .nav-bar {
         padding: 22px 100px;
         width: fit-content;
@@ -82,12 +86,13 @@
         
         &__list {
             padding: 0;
-            height: fit-content;
+            height: 80px;
             top: 0px;
             left: 0px;
             flex-direction: row;
             flex-basis: 55%;
             justify-content: space-between;
+            box-sizing: border-box;
             position: relative;
             background-color:#FFFFFF;
 
