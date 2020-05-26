@@ -1,4 +1,9 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
+  .button {
+    padding: 10px 0;
+    width: 200px;
+    height: 40px; }
+
   .irregular__background__top {
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
@@ -69,25 +74,19 @@
         color: rgba(6, 10, 36, 0.56); }
 
   .introduction {
-    padding-top: 120px;
-    padding-left: 200px; }
+    padding-top: 80px;
+    padding-left: 80px; }
     .introduction__title {
       margin: 0px;
       padding-left: 0;
-      width: auto;
-      font-size: 64px; }
+      width: 250px; }
       .introduction__title-punto {
         padding-left: 0;
         font-size: 64px;
         color: #0000EC; }
     .introduction__p {
-      display: none; }
-      .introduction__p-desktop {
-        margin-top: 15px;
-        margin-bottom: 20px;
-        height: 48px;
-        display: block;
-        font-family: 'IBM Plex Mono', monospace; }
+      margin-top: 10px;
+      width: 470px; }
 
   .episodes {
     padding: 0; }

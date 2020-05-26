@@ -1,10 +1,16 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     
     $paddin-left: 16px;
 
     @mixin margin-padding {
         margin: 0;
         padding: 0;
+    }
+
+    .button {
+        padding: 10px 0;
+        width: 200px;
+        height: 40px;
     }
 
     .irregular__background {
@@ -78,15 +84,13 @@
     }
 
     .introduction{
-        padding-top: 120px;
-        padding-left: 200px;
+        padding-top: 80px;
+        padding-left: 80px;
 
         &__title {
-
             margin: 0px;
             padding-left: 0;
-            width: auto;
-            font-size: 64px;
+            width: 250px;
             
             &-punto {
                 padding-left: 0;
@@ -94,19 +98,10 @@
                 color: #0000EC;
             }
         }
-        
+       
         &__p {
-            display: none;
-            
-            &-desktop {
-
-                margin-top: 15px;
-                margin-bottom: 20px;
-
-                height: 48px;
-                display: block;
-                font-family: 'IBM Plex Mono', monospace;
-            }
+            margin-top: 10px;
+            width: 470px;
         }
     }
 
