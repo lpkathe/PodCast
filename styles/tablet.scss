@@ -159,56 +159,29 @@
 
     .special_guest {
         &__title {
-
-            margin: 64px 0 36px 0;
+            padding-left: $paddin-left;
+            margin: 50px 0 36px 0;
         }
 
         &__container {
             display: flex;
             flex-flow: row wrap;
             margin-top: 36px;
-
-            & img {
-                width: 480px;
-                height: 364px;
-            }
+            justify-content: center;
         }
     }
 
     .topics {
         
         &__title{
-
-            margin: 64px auto 56px 0px;
+            margin-top: 50px;
         }
 
         &__container{
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             justify-content: center;
             
-            & div {
-                margin: 0 0 34px 0;
-                width: 260px;
-
-                & picture {
-                    margin: 0 0 16px 0;
-                    box-sizing: border-box;
-                
-                    & img {
-                        margin: 13px 78px;
-                    }
-                }
-
-                & p {
-                    font-family: 'IBM Plex Sans', sans-serif;
-                    font-size: 24px;
-                    font-weight: bolder;
-                    color: #060A24;
-                    letter-spacing: 0;
-                    text-align: center;
-                    margin: 0px 16px 0 16px;
-                }
-            }
+           
         }
     }
 
