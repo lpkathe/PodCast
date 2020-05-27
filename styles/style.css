@@ -40,7 +40,7 @@
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   border-top: 20vw solid white;
-  border-right: 100vh solid transparent; }
+  border-right: 100vw solid transparent; }
 .irregular__background__bottom {
   width: 0;
   height: 0;
