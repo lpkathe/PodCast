@@ -159,8 +159,8 @@
 
     .special_guest {
         &__title {
-            padding-left: $paddin-left;
             margin: 50px 0 36px 0;
+            padding-left: $paddin-left;
         }
 
         &__container {
@@ -174,14 +174,13 @@
     .topics {
         
         &__title{
-            margin-top: 50px;
+            margin: 50px 0;
+            padding-left: $paddin-left;
         }
 
         &__container{
             flex-flow: row wrap;
             justify-content: center;
-            
-           
         }
     }
 
