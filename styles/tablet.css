@@ -108,17 +108,15 @@
       margin-top: 64px; }
       .phone__picture__image {
         height: 660px;
-        margin-top: -230px; }
+        margin-top: -170px; }
     .phone__text__container {
-      margin: 40px 0 0 70px; }
+      margin: 40px 0 0 30px; }
       .phone__text__container__title {
-        padding-left: 0px;
         width: 400px;
-        margin-top: 0;
-        margin-bottom: 24px; }
+        margin: 0 0 24px 0; }
       .phone__text__container__p {
         margin-left: 0px;
-        width: 464px; }
+        width: 350px; }
 
   .special_guest__title {
     margin: 64px 0 36px 0; }
