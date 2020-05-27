@@ -88,9 +88,10 @@
         padding-left: $paddin-left;
 
         &__title {
-            margin: 0px;
+            margin: 0 0 20px 0;
             padding-left: 0;
             width: 250px;
+            line-height: 22px;
             
             &-punto {
                 padding-left: 0;
@@ -185,21 +186,9 @@
     }
 
     .news {
-        margin-top: 0px;
-        padding-bottom: 151px;
-        width: 100vw;
-        height: 518px;
-        text-align: center;
-
-        &__title {
-
-            margin: 69px 0 36px 0;
-            padding: 0;
-            color: #FFFFFF;
-        }
-
+    
         & a {
-            width: 345px;
+        width: 300px;
         }
     }
 
@@ -226,8 +215,8 @@
             justify-content: flex-end;
             
             & a {
-                width: 18px;
                 padding-left: 36px;
+                width: 18px;
             }
         }
 
