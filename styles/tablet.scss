@@ -159,19 +159,14 @@
 
     .special_guest {
         &__title {
-
-            margin: 64px 0 36px 0;
+            margin: 50px 0 36px 0;
         }
 
         &__container {
             display: flex;
             flex-flow: row wrap;
             margin-top: 36px;
-
-            & img {
-                width: 480px;
-                height: 364px;
-            }
+            justify-content: center;
         }
     }
 
